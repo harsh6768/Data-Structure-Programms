@@ -40,14 +40,15 @@ int main()
 		case 5:
 			 deletion_from_beg();
 			 break;
-	    case 6:
-	    	 deletion_from_last();
-	    	 break;
-	    case 7:
-	    	 deletion_from_anywhere();
+	        case 6:
+	    	         deletion_from_last();
+	    	         break;
+	        case 7:
+	    	         deletion_from_anywhere();
+			 break;
 		case 8:
-		     display();		
-	         break;		   
+		         display();		
+	                 break;		   
 	}
     }
 	return 0;

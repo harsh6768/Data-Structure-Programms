@@ -15,15 +15,12 @@ void deletion_from_beg();
 void deletion_from_last();
 void deletion_from_anywhere();
 void display();
-void max_node();
-//void min_node();
-//void even_odd();
 int main()
 {
 	int a,n;
 	while(1)
 	{
-	cout<<"\n1-->create\n2--> Insert_at_BegininG\n3-->Inser_at_lasT\n4-->InserT_at_any_point\n5-->Deletion_from_beg\n6-->Deletion_from_last\n7-->Deletion_from_anywhere\n8-->Max_node_sigle_list\n9-->min_node__in__list\n10-->DisplaY the node\n";
+	cout<<"\n1-->create\n2--> Insert_at_BegininG\n3-->Inser_at_lasT\n4-->InserT_at_any_point\n5-->Deletion_from_beg\n6-->Deletion_from_last\n7-->Deletion_from_anywhere\n8-->DisplaY the node\n";
 	cout<<"Choose the option:";
 	cin>>n;
 	switch(n)
@@ -42,20 +39,15 @@ int main()
 		case 5:
 			 deletion_from_beg();
 			 break;
-	    case 6:
-	    	 deletion_from_last();
-	    	 break;
-	    case 7:
-	    	 deletion_from_anywhere();
-	    case 8:
-	    	  max_node();
-	    	  break;
-	    case 9:
-	    	  //min_node();
-	    	  break;
-		case 10:
-		     display();		
-	         break;		   
+	        case 6:
+	    	        deletion_from_last();
+	    	         break;
+	        case 7:
+	    	        deletion_from_anywhere();
+			break;
+	        case 8:
+	    	     display();		
+	             break;	     	   
 	}
 
     }
@@ -173,18 +165,4 @@ void deletion_from_anywhere()
 	}
 	preloc->link=loc->link;    //assign the address of next to loc node to the preloc of the loc the delete the loc
 }
-void max_node()
-{
-	int max=0;
-	while(loc->link!=NULL)
-	{
-	   if(loc->info>max)
-	   {
-	     max=loc->info; 	
-	   }	
-	   loc=loc->link;
-	}
-	cout<<max;
-}
-
 

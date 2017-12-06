@@ -57,9 +57,9 @@ int main()
    	cin>>n;
 	switch(n)
 	{
-		case 1:
-			push();
-			break;
+	    case 1:
+		push();
+		break;
 	    case 2:
 	    	pop();
 	    	break;

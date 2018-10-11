@@ -16,10 +16,11 @@ int main(){
 	cout<<"enter number that u want to search:";
 	cin>>key;
 	last=n-1;
-	mid=first+last/2;
 	
 	while(first<=last)
 	{
+		mid=first+last/2;   //for finding the mid value 
+		
 		if(key>a[mid])
 		{
 			first=mid+1;
